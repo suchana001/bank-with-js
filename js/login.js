@@ -10,10 +10,10 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     
     // step 4: verify email password on client side... do not verify on client side
     if(email === 'abc@gamil.com' && password === 'asdf'){
-        console.log('Valid User');
+        window.location.href = 'bank.html';
     }
     else{
-        console.log('Invalid User');
+        alert('Invalid User');
     }
 
 })
