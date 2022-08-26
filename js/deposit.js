@@ -13,7 +13,6 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const currentDepositTotal = previousDepositTotal + newDepositAmount;
     depositTotalElement.innerText = currentDepositTotal;
     // clear deposit field 
-    depositField.value = '';
 
     // get balance curren total 
     const balanceTotalElement = document.getElementById('balance-total');
@@ -22,5 +21,7 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
     const currentBalanceTotal = previousBalanceTotal + newDepositAmount;
     balanceTotalElement.innerText = currentBalanceTotal;
+
+    depositField.value = '';
      
 })
